@@ -252,8 +252,6 @@ const standardizeNumber = (n: number): AlgExpr => {
 }
 
 export const evaluateExpression = (expression: AlgExpr): AlgExpr => {
-  // TODO: Implement evaluation
-
   // Add, Sub, Mul
   if(expression.type === "Add" || expression.type === "Sub" || expression.type === "Mul") {
     let left = evaluateExpression(expression.arg1);
