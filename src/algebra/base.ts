@@ -179,6 +179,7 @@ class Parser {
       throw new Error('Unexpected end of input');
     }
     
+    // Negation - Objective 1
     if (token?.type === 'op' && token.op === '-') {
       this.consume(); // consume '-'
       const expr = this.parsePrimary();
@@ -252,8 +253,6 @@ const standardizeNumber = (n: number): AlgExpr => {
 }
 
 export const evaluateExpression = (expression: AlgExpr): AlgExpr => {
-  // TODO: Implement evaluation
-
   // Add, Sub, Mul
   if(expression.type === "Add" || expression.type === "Sub" || expression.type === "Mul") {
     let left = evaluateExpression(expression.arg1);
