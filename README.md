@@ -1,6 +1,6 @@
 Run with `npm install; npm run dev`.
 
-# Takehome Task: Algebra
+# Algebra
 
 ## Setup
 This repo contains boilerplate for an abstract syntax, called AlgExpr.
